@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Okie Website Guy - $25 Cheap Website Design Oklahoma | Affordable Web Designer Near Me | LLC Formation | Social Media Management | Bookkeeping Services | SEO Optimization</title>
+    <meta name="description" content="Oklahoma's #1 affordable business services! $25 websites, LLC formation Oklahoma, social media management, bookkeeping services, SEO optimization, business automation. Serving Tulsa, OKC, Norman. Complete Oklahoma business solutions!">
+    <meta name="keywords" content="cheap website design Oklahoma, affordable web design, LLC formation Oklahoma, social media management Oklahoma, bookkeeping services Oklahoma, SEO optimization Oklahoma, business automation Oklahoma, website designer near me, Oklahoma web designer, Tulsa website design, Oklahoma City web design, Norman business services, Oklahoma business consultant, small business website, professional business services Oklahoma, Oklahoma startup services, Tulsa LLC formation, Oklahoma City social media management, Oklahoma digital marketing, business process automation, Oklahoma business services, small business bookkeeping Oklahoma, Oklahoma LLC registration, Oklahoma SEO services, Tulsa SEO optimization, Oklahoma City SEO, Norman digital marketing, Google Analytics setup Oklahoma">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="The Okie Website Guy - $25 Websites + Complete Oklahoma Business Services!">
+    <meta property="og:description" content="Holy moly! $25 websites + LLC formation + social media management + bookkeeping + SEO optimization! Oklahoma's complete business solution. No hidden fees, no BS!">
+    <meta property="og:url" content="https://www.onspace.ai">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="OnSpace.AI">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Okie Website Guy - $25 Websites + Complete Oklahoma Business Services!">
+    <meta name="twitter:description" content="Holy moly! $25 websites + LLC formation + social media management + bookkeeping + SEO optimization! Oklahoma's complete business solution. No hidden fees, no BS!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop">
+    <meta name="twitter:url" content="https://www.onspace.ai">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KYKY5RQHQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2KYKY5RQHQ');
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'neon-blue': '#00D4FF',
+                        'neon-purple': '#9333EA',
+                        'neon-green': '#10B981',
+                        'cyber-dark': '#0F0F23',
+                        'cyber-gray': '#1A1A2E',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glow-text {
+            text-shadow: 0 0 20px currentColor;
+        }
+        .neon-glow {
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        .cyber-grid {
+            background-image: 
+                linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        @keyframes pulseGlow {
+            from { box-shadow: 0 0 20px rgba(0, 212, 255, 0.3); }
+            to { box-shadow: 0 0 40px rgba(0, 212, 255, 0.6); }
+        }
+    </style>
+</head>
+<body class="bg-cyber-dark text-white font-sans overflow-x-hidden">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 cyber-grid opacity-20 pointer-events-none"></div>
+    
+    <!-- Navigation -->
+    <nav class="relative z-50 bg-cyber-gray/90 backdrop-blur-md border-b border-neon-blue/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-code text-neon-blue text-2xl glow-text"></i>
+                    <span class="text-xl font-bold font-mono">The Okie Website Guy</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="hover:text-neon-blue transition-colors">Home</a>
+                    <a href="#pricing" class="hover:text-neon-blue transition-colors">Pricing</a>
+                    <a href="#upcharges" class="hover:text-neon-blue transition-colors">Services</a>
+                    <a href="#contact" class="hover:text-neon-blue transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <div class="floating">
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    <span class="text-neon-blue glow-text">$25</span> 
+                    <span class="block">Websites</span>
+                    <span class="text-neon-green glow-text">that don't suck!</span>
+                </h1>
+            </div>
+            
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+                Holy moly! We're basically <span class="text-neon-purple font-bold">giving away websites</span> for Oklahoma businesses! 
+                $25 gets you a complete professional website + first year hosting + SSL + mobile design + NO HIDDEN FEES! 
+                <br><br>
+                PLUS we do <span class="text-neon-blue font-bold">LLC formation Oklahoma</span>, social media management, bookkeeping, SEO, business automation - everything your Oklahoma business needs!
+                <br><br>
+                First year hosting? <span class="text-neon-green">✓ FREE</span>
+                SSL Certificate? <span class="text-neon-green">✓ FREE</span>
+                Mobile responsive design? <span class="text-neon-green">✓ FREE</span>
+                Your sanity? <span class="text-neon-green">✓ PRICELESS</span>
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <button class="bg-gradient-to-r from-neon-blue to-neon-purple px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transform transition-all neon-glow pulse-glow">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Get Your Oklahoma Business Started NOW!
+                </button>
+                <div class="flex items-center space-x-2 text-neon-green">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="font-mono">NO HIDDEN FEES GUARANTEE</span>
+                </div>
+            </div>
+            
+            <!-- Price Comparison -->
+            <div class="bg-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 max-w-2xl mx-auto">
+                <h3 class="text-xl font-bold mb-4 text-neon-blue">Other Oklahoma Business Services vs. The Okie Way</h3>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="text-red-400">
+                        <i class="fas fa-times mr-2"></i>Other Oklahoma web designers: $500+ plus hidden fees
+                    </div>
+                    <div class="text-neon-green">
+                        <i class="fas fa-check mr-2"></i>Okie Website Guy: $25 total, no BS
+                    </div>
+                    <div class="text-red-400">
+                        <i class="fas fa-times mr-2"></i>LLC formation Oklahoma: $300+ at law firms
+                    </div>
+                    <div class="text-neon-green">
+                        <i class="fas fa-check mr-2"></i>Our LLC formation: $300 complete
+                    </div>
+                    <div class="text-red-400">
+                        <i class="fas fa-times mr-2"></i>Social media management Oklahoma: $500+/month
+                    </div>
+                    <div class="text-neon-green">
+                        <i class="fas fa-check mr-2"></i>Our social media: $100/month
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section id="pricing" class="py-20 bg-cyber-gray/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    What's in Your 
+                    <span class="text-neon-blue glow-text">$25 Small Business Website?</span>
+                </h2>
+                <p class="text-xl text-gray-300">The best cheap website design Oklahoma has ever seen - perfect for Oklahoma startups and small businesses!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-green text-3xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">First Year Hosting FREE</h3>
+                    <p class="text-gray-300">FREE professional website hosting for 12 months! That's like $120 value for Oklahoma businesses!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-purple text-3xl mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Three Professional Pages</h3>
+                    <p class="text-gray-300">Home, About, Contact - the holy trinity of affordable web design for Oklahoma businesses!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-green text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">SSL Certificate</h3>
+                    <p class="text-gray-300">Encrypted website = Happy Google = Happy customers = More Oklahoma business!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-blue text-3xl mb-4">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Basic Website Edits</h3>
+                    <p class="text-gray-300">Need to change something? Your local Oklahoma web designer has got you covered!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-purple text-3xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Mobile Responsive Design</h3>
+                    <p class="text-gray-300">Looks amazing on phones, tablets, and grandma's ancient laptop across Oklahoma!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-purple text-3xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">Basic SEO Optimization</h3>
+                    <p class="text-gray-300">Get found on Google! Basic SEO setup to help your Oklahoma business show up in search results!</p>
+                </div>
+                
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="text-neon-green text-3xl mb-4">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-neon-blue">ZERO Hidden Fees</h3>
+                    <p class="text-gray-300">We said $25 for cheap website design, we mean $25. Period. End of story!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local SEO Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-8">
+                Serving <span class="text-neon-blue glow-text">All of Oklahoma</span>
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                From Tulsa website design to Oklahoma City web design to Norman business services - we're your local affordable web designer and complete Oklahoma business consultant!
+            </p>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-cyber-gray/50 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-neon-purple mb-2">Tulsa Business Services</h3>
+                    <p class="text-gray-300">Professional websites, LLC formation, social media management Oklahoma, and SEO optimization for Tulsa businesses</p>
+                </div>
+                <div class="bg-cyber-gray/50 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-neon-green mb-2">Oklahoma City Business Solutions</h3>
+                    <p class="text-gray-300">OKC's most affordable web design, bookkeeping services Oklahoma, business automation, and SEO services</p>
+                </div>
+                <div class="bg-cyber-gray/50 rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-neon-blue mb-2">Statewide Oklahoma Services</h3>
+                    <p class="text-gray-300">Norman, Lawton, Broken Arrow - complete professional business services all across Oklahoma!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Oklahoma Business Services Section -->
+    <section id="upcharges" class="py-20 bg-cyber-gray/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Complete Oklahoma Business Services - 
+                    <span class="text-neon-purple glow-text">Your One-Stop Shop!</span>
+                </h2>
+                <p class="text-xl text-gray-300">From cheap website design to LLC formation Oklahoma to social media management Oklahoma to SEO optimization - we handle EVERYTHING for your Oklahoma business success!</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Social Media Management -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-blue text-3xl">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-blue">$100</div>
+                            <div class="text-sm text-gray-400">/month</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Management Oklahoma</h3>
+                    <p class="text-gray-300 mb-4">Professional social media management Oklahoma for small businesses! Daily posts on 3 platforms. We'll make your business internet famous across Oklahoma!</p>
+                    <div class="flex space-x-2">
+                        <i class="fab fa-facebook text-blue-500"></i>
+                        <i class="fab fa-twitter text-blue-400"></i>
+                        <i class="fab fa-linkedin text-blue-600"></i>
+                    </div>
+                </div>
+                
+                <!-- Stripe Integration -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-green text-3xl">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-green">$25</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Online Payment Processing</h3>
+                    <p class="text-gray-300">Accept credit card payments on your Oklahoma business website like a boss! Professional payment processing setup.</p>
+                </div>
+                
+                <!-- Business Email -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-purple text-3xl">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-purple">$25</div>
+                            <div class="text-sm text-gray-400">/year</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Professional Business Email</h3>
+                    <p class="text-gray-300">yourname@yourbusiness.com - looks way more professional for Oklahoma businesses! Complete business email setup.</p>
+                </div>
+                
+                <!-- LLC Creation -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-blue text-3xl">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-blue">$300</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">LLC Formation Oklahoma</h3>
+                    <p class="text-gray-300">Make your Oklahoma business official! Complete LLC formation Oklahoma service - we handle all the paperwork so you can focus on growing your business!</p>
+                </div>
+                
+                <!-- Bookkeeping -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-green text-3xl">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-green">$100</div>
+                            <div class="text-sm text-gray-400">/month</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Small Business Bookkeeping Services</h3>
+                    <p class="text-gray-300">Professional bookkeeping services Oklahoma! We'll keep track of your money so you don't have to panic come tax time. Perfect for Oklahoma small businesses!</p>
+                </div>
+                
+                <!-- SEO Optimization -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-purple text-3xl">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-purple">$25</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO Optimization Oklahoma</h3>
+                    <p class="text-gray-300">Professional SEO optimization to dominate Google search results! Get your Oklahoma business found by customers searching online!</p>
+                </div>
+                
+                <!-- Google Analytics -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-blue text-3xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-blue">$25</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Google Analytics Setup</h3>
+                    <p class="text-gray-300">Professional Google Analytics setup and configuration! Track your Oklahoma business website visitors, traffic sources, and performance metrics.</p>
+                </div>
+                
+                <!-- Trademark -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-purple text-3xl">
+                            <i class="fas fa-trademark"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-purple">$60</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Trademark Registration</h3>
+                    <p class="text-gray-300">Protect your Oklahoma business brand name like it's your firstborn child! Professional trademark registration service.</p>
+                </div>
+                
+                <!-- Automation -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-blue text-3xl">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-blue">$100</div>
+                            <div class="text-sm text-gray-400">/month</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Business Automation Oklahoma</h3>
+                    <p class="text-gray-300">Business process automation for Oklahoma companies! Let robots handle the boring stuff while you focus on being awesome!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We're Awesome Section -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Why Choose Your Local Oklahoma 
+                    <span class="text-neon-green glow-text">Business Services Provider</span>
+                </h2>
+                <p class="text-xl text-gray-300">Seriously, try to find better cheap website design + complete business services in Oklahoma. We'll wait.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-neon-blue text-2xl mt-1">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Lightning Fast Delivery</h3>
+                            <p class="text-gray-300">We build affordable websites and set up Oklahoma business services faster than you can say "Oklahoma tornado"!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-neon-purple text-2xl mt-1">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Oklahoma Nice Service</h3>
+                            <p class="text-gray-300">We treat Oklahoma small businesses like family (the kind you actually like)! Personal service for every business owner.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-neon-green text-2xl mt-1">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Unbeatable Business Service Prices</h3>
+                            <p class="text-gray-300">$25 websites, $300 LLC formation Oklahoma, $100 social media management Oklahoma, $25 SEO optimization - other Oklahoma business consultants charge that for a consultation!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="text-neon-blue text-2xl mt-1">
+                            <i class="fas fa-support"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Local Oklahoma Support</h3>
+                            <p class="text-gray-300">Real Oklahoma support for all your business needs - website design, LLC formation, bookkeeping services Oklahoma, SEO optimization - everything!*</p>
+                            <p class="text-xs text-gray-500">*During business hours, weekdays, when we're not fishing</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-neon-blue/20 to-neon-purple/20 rounded-2xl p-8 backdrop-blur-md border border-neon-blue/30">
+                        <div class="text-center">
+                            <div class="text-6xl font-black text-neon-blue mb-4 glow-text">$25</div>
+                            <div class="text-2xl font-bold mb-6">Complete Small Business Website Package</div>
+                            <div class="space-y-3 text-left">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Professional Website Design</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>First Year Hosting FREE</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>SSL Certificate</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Three Pages</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Mobile Responsive Design</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Basic SEO Optimization</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Basic Edits Included</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 bg-cyber-gray/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Ready for 
+                    <span class="text-neon-blue glow-text">Complete Oklahoma Business Services?</span>
+                </h2>
+                <p class="text-xl text-gray-300">Fill out this form and we'll get your Oklahoma business started with affordable web design, LLC formation Oklahoma, social media management Oklahoma, SEO optimization, or any business service you need!</p>
+            </div>
+            
+            <form class="bg-cyber-gray/70 backdrop-blur-md rounded-2xl p-8 border border-neon-blue/20" id="contactForm">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="firstName" class="block text-sm font-medium text-neon-blue mb-2">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                    </div>
+                    <div>
+                        <label for="lastName" class="block text-sm font-medium text-neon-blue mb-2">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-neon-blue mb-2">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-neon-blue mb-2">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                    </div>
+                </div>
+                
+                <div class="mb-6">
+                    <label for="businessName" class="block text-sm font-medium text-neon-blue mb-2">Business Name *</label>
+                    <input type="text" id="businessName" name="businessName" required class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                </div>
+                
+                <div class="mb-6">
+                    <label for="businessType" class="block text-sm font-medium text-neon-blue mb-2">What kind of Oklahoma business is this?</label>
+                    <select id="businessType" name="businessType" class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all">
+                        <option value="">Select business type...</option>
+                        <option value="restaurant">Restaurant/Food Service</option>
+                        <option value="retail">Retail Store</option>
+                        <option value="services">Professional Services</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="automotive">Automotive</option>
+                        <option value="construction">Construction/Trades</option>
+                        <option value="beauty">Beauty/Salon</option>
+                        <option value="fitness">Fitness/Gym</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="nonprofit">Non-Profit</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Website Package Checkbox -->
+                <div class="mb-6">
+                    <label class="flex items-center space-x-3 cursor-pointer p-4 bg-cyber-gray/50 rounded-lg border border-neon-blue/30 hover:border-neon-blue/50 transition-colors">
+                        <input type="checkbox" id="websitePackage" name="websitePackage" value="true" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                        <div class="flex-1">
+                            <span class="text-lg font-bold text-neon-blue">$25 Small Business Website Package</span>
+                            <p class="text-sm text-gray-300">Complete affordable website with hosting, SSL, 3 pages, and basic SEO optimization</p>
+                        </div>
+                        <div class="text-2xl font-bold text-neon-blue">$25</div>
+                    </label>
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-neon-blue mb-3">Interested in these Oklahoma business services?</label>
+                    <div class="grid md:grid-cols-2 gap-3">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="social-media" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Social Media Management ($100/month)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="stripe" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Online Payments ($25)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="email" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Professional Business Email ($25/year)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="llc" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">LLC Formation Oklahoma ($300)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="bookkeeping" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Small Business Bookkeeping ($100/month)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="seo" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">SEO Optimization ($25)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="analytics" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Google Analytics Setup ($25)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="trademark" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Trademark Registration ($60)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="automation" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">Business Automation ($100/month)</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <label for="message" class="block text-sm font-medium text-neon-blue mb-2">Tell us about your Oklahoma business vision</label>
+                    <textarea id="message" name="message" rows="4" class="w-full bg-cyber-dark/50 border border-neon-blue/30 rounded-lg px-4 py-3 text-white focus:border-neon-blue focus:ring-2 focus:ring-neon-blue/20 outline-none transition-all" placeholder="What services do you need? Website design, LLC formation, social media management, bookkeeping, SEO optimization? Any specific colors or style preferences? Dreams and aspirations for your Oklahoma business?"></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="button" id="checkoutBtn" class="bg-gradient-to-r from-neon-blue to-neon-purple px-12 py-4 rounded-lg font-bold text-lg hover:scale-105 transform transition-all neon-glow pulse-glow">
+                        <i class="fas fa-credit-card mr-2"></i>
+                        Pay Now - $<span id="totalAmount">0</span>
+                    </button>
+                    <p class="text-sm text-gray-400 mt-3">💳 Secure payment powered by Stripe</p>
+                </div>
+                
+                <!-- Payment Modal -->
+                <div id="paymentModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+                    <div class="bg-cyber-gray/90 backdrop-blur-md rounded-2xl p-8 border border-neon-blue/30 max-w-md w-full">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-neon-blue mb-2">Complete Your Order</h3>
+                            <p class="text-gray-300">Total: $<span id="modalTotal">0</span></p>
+                        </div>
+                        
+                        <!-- Stripe Elements will be inserted here -->
+                        <div id="card-element" class="mb-6">
+                            <!-- A Stripe Element will be inserted here. -->
+                        </div>
+                        
+                        <!-- Display any errors -->
+                        <div id="card-errors" role="alert" class="text-red-400 text-sm mb-4"></div>
+                        
+                        <div class="flex space-x-4">
+                            <button id="payButton" class="flex-1 bg-gradient-to-r from-neon-blue to-neon-purple px-6 py-3 rounded-lg font-bold hover:scale-105 transform transition-all">
+                                <i class="fas fa-lock mr-2"></i>Pay Now
+                            </button>
+                            <button id="cancelPayment" class="px-6 py-3 border border-gray-600 rounded-lg hover:bg-gray-600 transition-colors">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-gray border-t border-neon-blue/20 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <i class="fas fa-code text-neon-blue text-2xl glow-text"></i>
+                    <span class="text-2xl font-bold font-mono">The Okie Website Guy</span>
+                </div>
+                <p class="text-gray-400 mb-6">Making the internet a more Oklahoma place, one $25 affordable website at a time. Complete business services for Oklahoma entrepreneurs!</p>
+                
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.facebook.com/TitanBusinessPros/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-neon-blue transition-colors" title="Follow us on Facebook">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@TitanBusinessPros" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-neon-blue transition-colors" title="Subscribe to our YouTube channel">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                    <a href="https://x.com/Titan_Biz_Pros" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-neon-blue transition-colors" title="Follow us on X">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+                
+                <p class="text-sm text-gray-500">© 2025 The Okie Website Guy. All rights reserved. No hidden fees, just hidden talent!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize Stripe with live publishable key
+        const stripe = Stripe('pk_live_51RozKUJvG5yjXpYKnVCq9KaSSijCCmjlSzmFks3Qq4wk0GHEKjS211QD9SHCW61jnxQFAyCXsxgIycixvNYjcEf300HBrQRbwk');
+        const elements = stripe.elements();
+        
+        // Style for Stripe Elements
+        const cardStyle = {
+            style: {
+                base: {
+                    color: '#ffffff',
+                    fontFamily: 'Inter, sans-serif',
+                    fontSmoothing: 'antialiased',
+                    fontSize: '16px',
+                    backgroundColor: 'transparent',
+                    '::placeholder': {
+                        color: '#9ca3af',
+                    },
+                },
+                invalid: {
+                    color: '#fa755a',
+                    iconColor: '#fa755a',
+                },
+            },
+        };
+        
+        // Create card element
+        const cardElement = elements.create('card', cardStyle);
+        
+        // Calculate total price based on selected addons and website package
+        function calculateTotal() {
+            const websitePackage = document.getElementById('websitePackage').checked;
+            const addons = document.querySelectorAll('input[name="addons[]"]:checked');
+            let total = websitePackage ? 25 : 0; // Only add $25 if website package is selected
+            
+            const addonPrices = {
+                'social-media': 100,
+                'stripe': 25,
+                'email': 25,
+                'llc': 300,
+                'bookkeeping': 100,
+                'seo': 25,
+                'analytics': 25,
+                'trademark': 60,
+                'automation': 100
+            };
+            
+            addons.forEach(addon => {
+                total += addonPrices[addon.value] || 0;
+            });
+            
+            return total;
+        }
+        
+        // Update total when addons or website package changes
+        function updateTotal() {
+            const total = calculateTotal();
+            document.getElementById('totalAmount').textContent = total;
+            document.getElementById('modalTotal').textContent = total;
+        }
+        
+        // Add event listeners to checkboxes
+        document.querySelectorAll('input[name="addons[]"]').forEach(checkbox => {
+            checkbox.addEventListener('change', updateTotal);
+        });
+        
+        // Add event listener to website package checkbox
+        document.getElementById('websitePackage').addEventListener('change', updateTotal);
+        
+        // Initialize total on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTotal();
+        });
+        
+        // Handle checkout button click
+        document.getElementById('checkoutBtn').addEventListener('click', async function() {
+            // Check if at least one service is selected
+            const websitePackage = document.getElementById('websitePackage').checked;
+            const addons = document.querySelectorAll('input[name="addons[]"]:checked');
+            
+            if (!websitePackage && addons.length === 0) {
+                alert('Please select at least one service before proceeding to payment.');
+                return;
+            }
+            
+            // Validate required fields
+            const form = document.getElementById('contactForm');
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = '#fa755a';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields before proceeding to payment.');
+                return;
+            }
+            
+            // Show payment modal
+            const modal = document.getElementById('paymentModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Mount card element if not already mounted
+            if (!cardElement._mounted) {
+                cardElement.mount('#card-element');
+                cardElement._mounted = true;
+            }
+        });
+        
+        // Handle payment form submission
+        document.getElementById('payButton').addEventListener('click', async function() {
+            const button = this;
+            const originalContent = button.innerHTML;
+            
+            button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Processing...';
+            button.disabled = true;
+            
+            try {
+                // Get form data
+                const form = document.getElementById('contactForm');
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData);
+                data.addons = formData.getAll('addons[]');
+                data.websitePackage = document.getElementById('websitePackage').checked;
+                
+                // Create payment intent
+                const response = await fetch('https://qrcmkaasinccmazkhjos.supabase.co/functions/v1/send-notification', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFyY21rYWFzaW5jY21hemtoam9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzMjI3MzMsImV4cCI6MjA2ODg5ODczM30.A0bqHs5oAogDsZ7gsmN9XeQaic38nCmshuj_fb3oV9M'
+                    },
+                    body: JSON.stringify({ 
+                        action: 'create_payment_intent',
+                        data: data 
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (!result.success) {
+                    throw new Error(result.error || 'Failed to create payment intent');
+                }
+                
+                // Confirm payment with Stripe
+                const {error, paymentIntent} = await stripe.confirmCardPayment(
+                    result.client_secret,
+                    {
+                        payment_method: {
+                            card: cardElement,
+                            billing_details: {
+                                name: `${data.firstName} ${data.lastName}`,
+                                email: data.email,
+                            },
+                        }
+                    }
+                );
+                
+                if (error) {
+                    throw new Error(error.message);
+                }
+                
+                if (paymentIntent.status === 'succeeded') {
+                    // Payment successful - send notification email
+                    await fetch('https://qrcmkaasinccmazkhjos.supabase.co/functions/v1/send-notification', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFyY21rYWFzaW5jY21hemtoam9zIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzMjI3MzMsImV4cCI6MjA2ODg5ODczM30.A0bqHs5oAogDsZ7gsmN9XeQaic38nCmshuj_fb3oV9M'
+                        },
+                        body: JSON.stringify({ 
+                            action: 'send_notification',
+                            data: data 
+                        })
+                    });
+                    
+                    // Show success message
+                    button.innerHTML = '<i class="fas fa-check mr-2"></i>Payment Successful!';
+                    button.classList.add('bg-neon-green');
+                    
+                    setTimeout(() => {
+                        // Close modal and reset form
+                        document.getElementById('paymentModal').classList.add('hidden');
+                        document.getElementById('paymentModal').classList.remove('flex');
+                        form.reset();
+                        // Reset website package to unchecked
+                        document.getElementById('websitePackage').checked = false;
+                        updateTotal();
+                        
+                        // Show thank you message
+                        alert('🎉 Payment successful! We\'ll start working on your services right away and be in touch soon!');
+                        
+                        // Reset button
+                        button.innerHTML = originalContent;
+                        button.classList.remove('bg-neon-green');
+                        button.disabled = false;
+                    }, 2000);
+                }
+                
+            } catch (error) {
+                console.error('Payment error:', error);
+                document.getElementById('card-errors').textContent = error.message;
+                
+                button.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i>Try Again';
+                button.classList.add('bg-red-500');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalContent;
+                    button.classList.remove('bg-red-500');
+                    button.disabled = false;
+                }, 3000);
+            }
+        });
+        
+        // Handle cancel payment
+        document.getElementById('cancelPayment').addEventListener('click', function() {
+            const modal = document.getElementById('paymentModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.getElementById('card-errors').textContent = '';
+        });
+        
+        // Handle Stripe element errors
+        cardElement.on('change', ({error}) => {
+            const displayError = document.getElementById('card-errors');
+            if (error) {
+                displayError.textContent = error.message;
+            } else {
+                displayError.textContent = '';
+            }
+        });
+
+        // Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to service cards
+            const serviceCards = document.querySelectorAll('[class*="hover:scale-105"]');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05) translateZ(0)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) translateZ(0)';
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
