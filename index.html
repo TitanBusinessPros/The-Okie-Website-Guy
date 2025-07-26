@@ -406,7 +406,7 @@
                     <p class="text-gray-300">Protect your Oklahoma business brand name like it's your firstborn child! Professional trademark registration service.</p>
                 </div>
                 
-                <!-- Automation -->
+                                <!-- Automation -->
                 <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
                     <div class="flex items-center justify-between mb-4">
                         <div class="text-neon-blue text-3xl">
@@ -419,6 +419,21 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3">Business Automation Oklahoma</h3>
                     <p class="text-gray-300">Business process automation for Oklahoma companies! Let robots handle the boring stuff while you focus on being awesome!</p>
+                </div>
+                
+                <!-- DNS Setup -->
+                <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="text-neon-green text-3xl">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-neon-green">$25</div>
+                            <div class="text-sm text-gray-400">one-time</div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">DNS Setup for Namecheap Domains</h3>
+                    <p class="text-gray-300">Professional DNS configuration for your Namecheap domain! We'll connect your domain to your Oklahoma business website like tech wizards!</p>
                 </div>
             </div>
         </div>
@@ -625,9 +640,13 @@
                             <input type="checkbox" name="addons[]" value="trademark" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
                             <span class="text-sm">Trademark Registration ($60)</span>
                         </label>
-                        <label class="flex items-center space-x-3 cursor-pointer">
+                                                <label class="flex items-center space-x-3 cursor-pointer">
                             <input type="checkbox" name="addons[]" value="automation" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
                             <span class="text-sm">Business Automation ($100/month)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" name="addons[]" value="dns" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
+                            <span class="text-sm">DNS Setup for Namecheap ($25)</span>
                         </label>
                     </div>
                 </div>
@@ -750,7 +769,7 @@
             const addons = document.querySelectorAll('input[name="addons[]"]:checked');
             let total = websitePackage ? 25 : 0; // Only add $25 if website package is selected
             
-            const addonPrices = {
+                        const addonPrices = {
                 'social-media': 100,
                 'stripe': 25,
                 'email': 25,
@@ -759,7 +778,8 @@
                 'seo': 25,
                 'analytics': 25,
                 'trademark': 60,
-                'automation': 100
+                'automation': 100,
+                'dns': 25
             };
             
             addons.forEach(addon => {
@@ -969,5 +989,6 @@
         });
     </script>
 
-</body>
+<script>window.onload=function(){var d=document.createElement("div");d.id="aionspaceLoadFinished";document.body.appendChild(d);};</script></body>
+
 </html>
