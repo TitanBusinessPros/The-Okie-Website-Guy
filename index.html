@@ -114,7 +114,7 @@
     <!-- Hero Section -->
     <section id="hero" class="relative min-h-screen flex items-center justify-center py-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <div class="floating">
+            <div class="floating">
                 <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
                     <span class="text-neon-blue glow-text">$25</span> 
                     <span class="block">Websites</span>
@@ -135,7 +135,7 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <button class="bg-gradient-to-r from-neon-blue to-neon-purple px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transform transition-all neon-glow pulse-glow">
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-neon-blue to-neon-purple px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transform transition-all neon-glow pulse-glow">
                     <i class="fas fa-rocket mr-2"></i>
                     Get Your Oklahoma Business Started NOW!
                 </button>
@@ -224,7 +224,7 @@
                     <p class="text-gray-300">Looks amazing on phones, tablets, and grandma's ancient laptop across Oklahoma!</p>
                 </div>
                 
-                                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
+                <div class="bg-cyber-gray/70 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
                     <div class="text-neon-purple text-3xl mb-4">
                         <i class="fas fa-search"></i>
                     </div>
@@ -414,7 +414,7 @@
                     <p class="text-gray-300">Protect your Oklahoma business brand name like it's your firstborn child! Professional trademark registration service.</p>
                 </div>
                 
-                                <!-- Automation -->
+                <!-- Automation -->
                 <div class="bg-gradient-to-br from-cyber-gray/70 to-cyber-gray/50 backdrop-blur-md rounded-xl p-6 border border-neon-blue/20 hover:border-neon-blue/50 transition-all hover:scale-105">
                     <div class="flex items-center justify-between mb-4">
                         <div class="text-neon-blue text-3xl">
@@ -490,8 +490,8 @@
                         </div>
                     </div>
                     
-                                                                                                        <div class="flex items-start space-x-4">
-                        <div class="text-neon-blue text-2xl mt-1">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-neon-green text-2xl mt-1">
                             <i class="fas fa-headset"></i>
                         </div>
                         <div>
@@ -535,6 +535,10 @@
                                 <div class="flex items-center space-x-3">
                                     <i class="fas fa-check text-neon-green"></i>
                                     <span>Basic Edits Included</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check text-neon-green"></i>
+                                    <span>Instant Email Notifications</span>
                                 </div>
                             </div>
                         </div>
@@ -607,7 +611,7 @@
                         <input type="checkbox" id="websitePackage" name="websitePackage" value="true" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
                         <div class="flex-1">
                             <span class="text-lg font-bold text-neon-blue">$25 Small Business Website Package</span>
-                            <p class="text-sm text-gray-300">Complete affordable website with hosting, SSL, 3 pages, and basic SEO optimization</p>
+                            <p class="text-sm text-gray-300">Complete affordable website with hosting, SSL, 3 pages, basic SEO optimization, and instant email notifications</p>
                         </div>
                         <div class="text-2xl font-bold text-neon-blue">$25</div>
                     </label>
@@ -648,7 +652,7 @@
                             <input type="checkbox" name="addons[]" value="trademark" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
                             <span class="text-sm">Trademark Registration ($60)</span>
                         </label>
-                                                <label class="flex items-center space-x-3 cursor-pointer">
+                        <label class="flex items-center space-x-3 cursor-pointer">
                             <input type="checkbox" name="addons[]" value="automation" class="rounded border-neon-blue/30 bg-cyber-dark/50 text-neon-blue focus:ring-neon-blue/20">
                             <span class="text-sm">Business Automation ($100/month)</span>
                         </label>
@@ -777,7 +781,7 @@
             const addons = document.querySelectorAll('input[name="addons[]"]:checked');
             let total = websitePackage ? 25 : 0; // Only add $25 if website package is selected
             
-                        const addonPrices = {
+            const addonPrices = {
                 'social-media': 100,
                 'stripe': 25,
                 'email': 25,
