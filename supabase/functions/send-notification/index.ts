@@ -64,10 +64,12 @@ async function handleCreatePaymentIntent(data: any) {
             'email': 2500, // $25 (yearly)
       'llc': 30000, // $300
       'bookkeeping': 10000, // $100 (monthly - first month)
-      'analytics': 2500, // $25
+            'analytics': 2500, // $25
       'trademark': 6000, // $60
       'seo': 2500, // $25
-      'automation': 10000 // $100 (monthly - first month)
+      'automation': 10000, // $100 (monthly - first month)
+      'dns': 2500, // $25
+      'email-notifications': 3000 // $30
     }
     
     data.addons.forEach((addon: string) => {
